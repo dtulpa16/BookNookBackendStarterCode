@@ -13,10 +13,7 @@ namespace bookNookStarterCode.Data
 
         }
         public DbSet<Car> Cars { get; set; }
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseMySQL("Server=localhost;Port=3306;Database=booknook;User=root;Password=password123;");
-        }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
